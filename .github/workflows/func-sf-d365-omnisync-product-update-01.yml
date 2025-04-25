@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy dotnet core project to Azure Function App - func-sf-d365-omnisync-account-update-01
+name: Build and deploy dotnet core project to Azure Function App - func-sf-d365-omnisync-product-update-01
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'func-sf-d365-omnisync-account-update-01'
+          app-name: 'func-sf-d365-omnisync-product-update-01'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
           
